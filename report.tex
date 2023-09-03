@@ -105,16 +105,20 @@ Formally, the Markov blanket of a variable X in a Bayesian network consists of t
   \item Parents of X's children: These are the variables that are parents of X's children. If C is influenced by B, then B would be a parent of C's child (C) and would be included in the Markov blanket of A.
 \end{itemize}
 
-Simpler terms: Imagine you have three friends: Max, Jacob, and Cam. 
-They often influence each other's decisions. Now, let's focus on Max. Max's Markov blanket consists of the people who directly influence him and the people who are directly influenced by him. These people form a special group that has all the information needed to understand Max's decisions.
+Simpler terms: Imagine you have three variables: Cloudy, Rain, Wet Grass. 
+From what you know (observed data), they do influence each other's decisions. Rain's Markov blanket consists of the variables that directly influence it. It will form a special group that has all the information needed to understand how rain will happen.
 
-So, who would be in Max's Markov blanket? Firstly, it would include his parents because they have a direct influence on him. Secondly, it would include any friends who are directly influenced by Max's decisions, like Jacob or Cam. Lastly, if any of Max's friends have their own friends who are influenced by Max, those friends would also be in his Markov blanket.
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{mb.png}
 
-In simpler terms, Max's Markov blanket is like a small group of people who are most important to her decision-making. If you know what these people are doing, you can make a pretty good guess about what Max is likely to do.
+So, who would be in Rain's Markov blanket? Firstly, it would include Cloudy because, from 21 years of living, you know if its cloudy -> High-chance it will rain! Secondly, it would include any nodes that are directly influenced by rain, like wet grass, wet floor, or cold.
 
-In a Bayesian network, variables are like people, and the Markov blanket of a variable is the group of variables that have a direct influence on it or are directly influenced by it. It's the minimal set of variables that you need to pay attention to in order to understand and predict the behavior of that variable, without worrying about all the other variables in the network.
+If you think "Rain" as a person, Rain's Markov blanket is like a small group of people who are most important to her decision-making. If you know what these people are doing, you can make a pretty good guess about what Rain is likely to do.
+
+In a Bayesian network, Markov blanket (MB) of a variable is the group of variables that have a direct influence on it or are directly influenced by it. It's the minimal set of variables that you need to pay attention to in order to understand and predict the behavior of that variable, without worrying about all the other variables in the network.
 
 The Markov blanket concept helps us simplify things by focusing on a smaller, important group rather than considering the entire network. It allows us to make predictions or perform calculations about a specific variable by looking only at the variables in its Markov blanket.
+
+
 
 
 \section{Task description and data construction}
