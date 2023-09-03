@@ -1,0 +1,240 @@
+\documentclass{article}
+
+
+\usepackage{arxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}
+\usepackage{graphicx}
+
+
+\title{NASA DAG ML Report}
+
+
+\author{
+  Jasper Doan \\
+  Donald Bren School of Information and Computer Sciences\\
+  University of California, Irvine\\
+  Irvine, CA 92697 \\
+  \texttt{jasperd1@uci.edu} \\
+}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Develop an approach to validate expert-drawn graphs by building probabilistic graph model DAGs, through populating Machine-Learning with empirical biological data from the NASA Open Science Data Repository. Tasked with researching IAMB, Fast-IAMB, Inter-IAMB, and IAMB-FDR algorithms for medical risk assessment to let NASA HSRB formalize a shared causal flow of risk model among Risk Board stakeholders. 
+\end{abstract}
+
+
+% keywords can be removed
+%\keywords{First keyword \and Second keyword \and More}
+
+
+\section{Introduction}
+The goal of our project is to validate expert-drawn Directed Acyclic Graphs (DAGs) for Human Spaceflight Risks, for tracking and researching risks that astronaut crews face during spaceflight.
+This paper goes over the process of using Bnlearn's IAMB, Fast-IAMB, Inter-IAMB, and IAMB-FDR algorithm DAG generation to formalize a shared causal flow of risk model. 
+
+\paragraph{Directed Acyclic Graphs (DAG)}
+DAGs are network maps which have unidirectional arrows (directed) and do not allow feedback loops (acyclic). 
+
+In the context of the The Human System Risk Board (HSRB), DAGs are used to represent the chain of events that lead from spaceflight exposures to negative mission-level outcomes. This enables two immediate uses as well as sets the stage for further evolution of the causal networks as tools of inference.
+
+\paragraph{Why DAG?}
+Enable mathematical analysis of the relationships between factors and can potentially assess the strength of influence if quantitative values are assigned to nodes and edges.
+
+Subject to challenge and improvement based on evolving evidence. If new evidence suggests a lack of causal connection, the corresponding connection can be removed.
+It can aid in conveying high-level and aggregated concepts that link key components of causal flow to downstream effects in the risk domain.
+They facilitate communication and the development of shared mental models during board or stakeholder meetings.
+
+\paragraph{DAGs for communication of complex human spaceflight risks}
+Limits the provision of in-mission support capabilities and resources, while simultaneously increasing the need for them
+
+Limits on these capabilities and resources stem from constraints on mass, volume, power, and data bandwidth allocations available to the vehicle’s systems/habitats used by astronauts; the further a mission takes astronauts from Earth, the greater these constraints and thus the less support capability they will have. 
+The need for capabilities and resources is increased because the further a mission goes from Earth, the longer astronauts are exposed to degradation by the spaceflight environment.
+
+\paragraph{DAGs aid in prioritizing research and development}
+Evaluation of Human System Risks is necessary to prioritize the allocation of limited research, surveillance, and technology development resources.
+
+The previous scoring system (Red, Yellow, Green) did not consider the complex interactions and synergies between risks, which can amplify risks in other body systems or at a later time.
+Directed acyclic graphs (DAGs) help analyze the structure of risks and identify important factors in the causal network.
+Nodes in the DAG represent factors that have many effects, bridge or join risks together, or exist in the middle of the action.
+DAG analysis provides insights into the interdependencies and cumulative effects of risks faced by astronauts during missions.
+
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{flow.png}
+
+
+
+\section{Theory}
+\paragraph{Bayesian networks}
+You can represent these relationships between variables by building a Bayesian networks.
+Where it shows the representation of how nodes/variables interact with each other (direct dependencies between variables) → Allows the user to affirm and make accurate predictions based on observed data. 
+
+For instance, if we observe that the weather is rainy, we can use the Bayesian network to estimate the probability of carrying an umbrella and the probability of the ground being wet. We can also do the reverse: if we know the ground is wet, we can estimate the probability that it is raining.
+By using probabilities and the relationships encoded in the graph, Bayesian networks allow us to reason and make inferences about the variables even when we have incomplete or uncertain information.
+
+\paragraph{Constraint-based methods (What IAMB Variations do)}
+Discover the dependencies and relationships between nodes based on data by imposing certain constraints. Identify statistical dependencies between nodes → infer the underlying structure of the Bayesian network
+\begin{itemize}
+  \item Independence Testing: Determines the statistical independence or dependence between pairs of variables in the data. 
+  Test whether the variables are conditionally independent given other variables. 
+  If two variables are found to be independent, it suggests that there is no direct edge between them in the Bayesian network.
+  
+  \item Skeleton Discovery: Constructs a skeleton or an initial structure for the Bayesian network. 
+  Represents the presence or absence of edges between variables. 
+  Edges are added to the graph for variables that are found to be dependent, indicating a potential causal relationship.
+   
+  \item Orientation of Edges: Determine the orientation of the edges in the network.
+  Establish the direction of causality between variables. 
+  Examining conditional dependencies and using additional tests or heuristics to infer the most likely direction of causal influence.  
+\end{itemize}
+
+\paragraph{Markov Blanket}
+The Markov blanket of a variable in a Bayesian network: Minimal set of variables that contains all the information necessary to predict the variable's value, given the values of other variables in the network.
+
+Formally, the Markov blanket of a variable X in a Bayesian network consists of three sets of variables:
+\begin{itemize}
+  \item Parents of X: These are the variables that directly influence the value of X. If A is influenced by B, then B would be a parent of A.
+  \item Children of X: These are the variables that are directly influenced by the value of X. If C is influenced by A, then C would be a child of A.
+  \item Parents of X's children: These are the variables that are parents of X's children. If C is influenced by B, then B would be a parent of C's child (C) and would be included in the Markov blanket of A.
+\end{itemize}
+
+Simpler terms: Imagine you have three friends: Max, Jacob, and Cam. 
+They often influence each other's decisions. Now, let's focus on Max. Max's Markov blanket consists of the people who directly influence him and the people who are directly influenced by him. These people form a special group that has all the information needed to understand Max's decisions.
+
+So, who would be in Max's Markov blanket? Firstly, it would include his parents because they have a direct influence on him. Secondly, it would include any friends who are directly influenced by Max's decisions, like Jacob or Cam. Lastly, if any of Max's friends have their own friends who are influenced by Max, those friends would also be in his Markov blanket.
+
+In simpler terms, Max's Markov blanket is like a small group of people who are most important to her decision-making. If you know what these people are doing, you can make a pretty good guess about what Max is likely to do.
+
+In a Bayesian network, variables are like people, and the Markov blanket of a variable is the group of variables that have a direct influence on it or are directly influenced by it. It's the minimal set of variables that you need to pay attention to in order to understand and predict the behavior of that variable, without worrying about all the other variables in the network.
+
+The Markov blanket concept helps us simplify things by focusing on a smaller, important group rather than considering the entire network. It allows us to make predictions or perform calculations about a specific variable by looking only at the variables in its Markov blanket.
+
+
+\section{Task description and data construction}
+\label{sec:headings}
+We are provided with five datasets from Kaggle: Sales train, Sale test, items, item categories and shops. In the Sales train dataset, it provides the information about the sales’ number of an item in a shop within a day. In the Sales test dataset, it provides the shop id and item id which are the items and shops we need to predict. In the other three datasets, we can get the information about item’s name and its category, and the shops’ name.
+\paragraph{Task modeling.}
+We approach this task as a regression problem. For every item and shop pair, we need to predict its next month sales(a number).
+\paragraph{Construct train and test data.}
+In the Sales train dataset, it only provides the sale within one day, but we need to predict the sale of next month. So we sum the day's sale into month's sale group by item, shop, date(within a month).
+In the Sales train dataset, it only contains two columns(item id and shop id). Because we need to provide the sales of next month, we add a date column for it, which stand for the date information of next month.
+
+\subsection{Headings: second level}
+\lipsum[5]
+\begin{equation}
+\xi _{ij}(t)=P(x_{t}=i,x_{t+1}=j|y,v,w;\theta)= {\frac {\alpha _{i}(t)a^{w_t}_{ij}\beta _{j}(t+1)b^{v_{t+1}}_{j}(y_{t+1})}{\sum _{i=1}^{N} \sum _{j=1}^{N} \alpha _{i}(t)a^{w_t}_{ij}\beta _{j}(t+1)b^{v_{t+1}}_{j}(y_{t+1})}}
+\end{equation}
+
+\subsubsection{Headings: third level}
+\lipsum[6]
+
+\paragraph{Paragraph}
+\lipsum[7]
+
+\section{Examples of citations, figures, tables, references}
+\label{sec:others}
+\lipsum[8] \cite{kour2014real,kour2014fast} and see \cite{hadash2018estimate}.
+
+The documentation for \verb+natbib+ may be found at
+\begin{center}
+  \url{http://mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf}
+\end{center}
+Of note is the command \verb+\citet+, which produces citations
+appropriate for use in inline text.  For example,
+\begin{verbatim}
+   \citet{hasselmo} investigated\dots
+\end{verbatim}
+produces
+\begin{quote}
+  Hasselmo, et al.\ (1995) investigated\dots
+\end{quote}
+
+\begin{center}
+  \url{https://www.ctan.org/pkg/booktabs}
+\end{center}
+
+
+\subsection{Figures}
+\lipsum[10] 
+\footnote{Sample of the first footnote.}
+\lipsum[11] 
+
+\begin{figure}
+  \centering
+  \fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+  \caption{Sample figure caption.}
+  \label{fig:fig1}
+\end{figure}
+
+\begin{figure} % picture
+    \centering
+    \includegraphics{test.png}
+\end{figure}
+
+\subsection{Tables}
+\lipsum[12]
+See awesome Table~\ref{tab:table}.
+
+\begin{table}
+ \caption{Sample table title}
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    \multicolumn{2}{c}{Part}                   \\
+    \cmidrule(r){1-2}
+    Name     & Description     & Size ($\mu$m) \\
+    \midrule
+    Dendrite & Input terminal  & $\sim$100     \\
+    Axon     & Output terminal & $\sim$10      \\
+    Soma     & Cell body       & up to $10^6$  \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:table}
+\end{table}
+
+\subsection{Lists}
+\begin{itemize}
+\item Lorem ipsum dolor sit amet
+\item consectetur adipiscing elit. 
+\item Aliquam dignissim blandit est, in dictum tortor gravida eget. In ac rutrum magna.
+\end{itemize}
+
+
+\bibliographystyle{unsrt}  
+%\bibliography{references}  %%% Remove comment to use the external .bib file (using bibtex).
+%%% and comment out the ``thebibliography'' section.
+
+
+%%% Comment out this section when you \bibliography{references} is enabled.
+\begin{thebibliography}{1}
+
+\bibitem{kour2014real}
+George Kour and Raid Saabne.
+\newblock Real-time segmentation of on-line handwritten arabic script.
+\newblock In {\em Frontiers in Handwriting Recognition (ICFHR), 2014 14th
+  International Conference on}, pages 417--422. IEEE, 2014.
+
+\bibitem{kour2014fast}
+George Kour and Raid Saabne.
+\newblock Fast classification of handwritten on-line arabic characters.
+\newblock In {\em Soft Computing and Pattern Recognition (SoCPaR), 2014 6th
+  International Conference of}, pages 312--318. IEEE, 2014.
+
+\bibitem{hadash2018estimate}
+Guy Hadash, Einat Kermany, Boaz Carmeli, Ofer Lavi, George Kour, and Alon
+  Jacovi.
+\newblock Estimate and replace: A novel approach to integrating deep neural
+  networks with existing applications.
+\newblock {\em arXiv preprint arXiv:1804.09028}, 2018.
+
+\end{thebibliography}
+
+
+\end{document}
