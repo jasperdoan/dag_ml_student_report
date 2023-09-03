@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.2)  3 SEP 2023 00:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.2)  3 SEP 2023 00:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -418,7 +418,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 {C:/Users/jaspl/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
-<flow.png, id=51, 1447.4075pt x 831.105pt>
+<flow.png, id=55, 1447.4075pt x 831.105pt>
 File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 70.
@@ -433,41 +433,41 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 85
  (C:\Users\jaspl\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [2 <./flow.png>]
-<mb.png, id=61, 1376.14125pt x 1053.9375pt>
+<mb.png, id=65, 1376.14125pt x 1053.9375pt>
 File: mb.png Graphic file (type png)
 <use mb.png>
 Package pdftex.def Info: mb.png  used on input line 111.
 (pdftex.def)             Requested size: 469.75069pt x 359.76529pt.
  [3 <./mb.png>] [4]
-<test.png, id=93, 803.0pt x 702.625pt>
+<test.png, id=97, 803.0pt x 702.625pt>
 File: test.png Graphic file (type png)
 <use test.png>
-Package pdftex.def Info: test.png  used on input line 182.
+Package pdftex.def Info: test.png  used on input line 190.
 (pdftex.def)             Requested size: 802.99805pt x 702.62328pt.
 
-Overfull \hbox (333.24306pt too wide) in paragraph at lines 182--183
+Overfull \hbox (333.24306pt too wide) in paragraph at lines 190--191
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 52.19328pt on input line 183.
+LaTeX Warning: Float too large for page by 52.19328pt on input line 191.
 
 [5] [6 <./test.png>] [7] (report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 0E1377C028DAC5903D2C42119B04D2F2;1341.
+(rerunfilecheck)             Checksum: 7925435E15E57331E417BAEE4A17ABBB;1379.
  ) 
 Here is how much of TeX's memory you used:
- 12455 strings out of 476331
- 205010 string characters out of 5787766
- 1864660 words of memory out of 5000000
- 32450 multiletter control sequences out of 15000+600000
+ 12457 strings out of 476331
+ 205030 string characters out of 5787766
+ 1863660 words of memory out of 5000000
+ 32451 multiletter control sequences out of 15000+600000
  566967 words of font info for 205 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,77p,1034b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,77p,1034b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jaspl\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\jaspl\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (7 pages, 528178 bytes).
+Output written on report.pdf (7 pages, 528643 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 53336 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 53344 words of extra memory for PDF output out of 61914 (max. 10000000)
 
