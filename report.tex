@@ -73,7 +73,7 @@ Develop an approach to validate expert-drawn graphs by building probabilistic gr
 
 \section{Introduction}
 The goal of our project is to validate expert-drawn Directed Acyclic Graphs (DAGs) for Human Spaceflight Risks, for tracking and researching risks that astronaut crews face during spaceflight.
-This paper goes over the process of using Bnlearn's IAMB, Fast-IAMB, Inter-IAMB, and IAMB-FDR algorithm DAG generation to formalize a shared causal flow of risk model. 
+This paper goes over the process of using Bnlearn's IAMB, Fast-IAMB, Inter-IAMB, and IAMB-FDR algorithm DAG generation to formalize a shared causal flow of risk model.
 
 \paragraph{Directed Acyclic Graphs (DAG)}
 DAGs are network maps which have unidirectional arrows (directed) and do not allow feedback loops (acyclic). 
@@ -103,6 +103,31 @@ DAG analysis provides insights into the interdependencies and cumulative effects
 
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{flow.png}
 
+
+\paragraph{DAG Validation}
+In the context of NASA's Human System Risk Management Process, DAG validation can be used as Level of Evidence (LoE) assessment, which is a process used by Risk Custodial Teams at NASA.
+LoE assessment involves evaluating the strength of evidence for each individual arrow (causal relationship) in a DAG. This assessment is based on guidelines initially defined by epidemiologist Sir A. Bradford Hill in 1965. To assign an LoE rating, one needs to carefully review and synthesize published and unpublished data relevant to the causal relationships.
+
+The key difference between LoE assessment and DAG validation is that LoE assessment focuses on determining how strong the evidence is for a single causal connection, while DAG validation looks at whether the overall causal system represented by the DAG is correct. Sometimes, there can be discrepancies between these two approaches if important causal relationships are missing in the DAG.
+
+This can be further emphasized that DAG validation should occur after at least a preliminary LoE assessment, hence the goal of this project. And both assessments should be updated when new evidence becomes available. Additionally, the author notes that although testable implications may be validated, further evidence is required because the studies used were conducted on rodents and not humans.
+It is to note that specific publications, studies, and datasets used in the assessment are initially considered weak evidence for human system risks, but they can be assigned a higher LoE if they meet certain quality criteria.
+
+We acknowledged that a formal evaluation of QoE and LoE has not been performed in their study due to resource constraints. However, they suggest that future research should focus on high-quality evidence to improve the assessment of DAG validity.
+But nonetheless we should explore the possibility of applying LoE ratings to entire DAGs or subsets of DAGs, which could help identify knowledge gaps and provide better communication of critical information related to human system risk in spaceflight missions.
+
+This is the analysis of a DAG done by experts (figure below), it reveals certain relationships between variables based on the flow of causation depicted in the diagram. In this DAG, it's expected that all variables connected by arrows should have non-zero marginal correlations with each other. Here are some pairs of variables that should be marginally correlated, along with the expected direction of correlation (positive or negative):
+\begin{itemize}
+  \item Skeletal unloading and bone formation: There should be a negative correlation between these two variables. In other words, when skeletal unloading occurs, we expect to see a decrease in bone formation.
+  \item Skeletal unloading and bone resorption: There should be a positive correlation between these two variables. When skeletal unloading happens, it should lead to an increase in bone resorption.
+  \item Bone formation and bone mass: There should be a positive correlation between these two variables. When bone formation increases, we expect to see an increase in bone mass.
+  \item Bone resorption and bone mass: There should be a negative correlation between these two variables. An increase in bone resorption should result in a decrease in bone mass.
+  \item Bone mass and trabecular microarchitecture: There should be a positive correlation between these two variables. Higher bone mass is expected to be associated with a denser trabecular microarchitecture.
+  \item Bone mass and bone strength: There should be a positive correlation between these two variables. A greater bone mass should lead to higher bone strength.
+\end{itemize}
+
+
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{dagpub.png}
 
 
 \section{Theory}

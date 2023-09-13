@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1693940293 "c:/Users/jaspl/Downloads/Latex/report.tex" "report.pdf" "report" 1693940297 0
+["pdflatex"] 1694628387 "c:/Users/jaspl/Downloads/Latex/report.tex" "report.pdf" "report" 1694628392 0
   "C:/Users/jaspl/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1693720472 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/jaspl/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1693720478 20028 d1ffe35f46a31dc5add28eb29757ab07 ""
   "C:/Users/jaspl/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1693722588 11548 84657dfbf0ff27b03ba063d67b2af38e ""
@@ -112,16 +112,17 @@
   "C:/Users/jaspl/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/jaspl/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "arxiv.sty" 1693721906 7756 aebc7cacc91277439daa0a5d4526ab0d ""
-  "c:/Users/jaspl/Downloads/Latex/report.tex" 1693940289 18287 56fc18d22b3d15d19487bc3bdf99c6db ""
+  "c:/Users/jaspl/Downloads/Latex/report.tex" 1694628386 22108 aa06ac11e43b7058af5cb06bd296a9fc ""
+  "dagpub.png" 1694626971 135875 4700910626b4ac13af771075d2d74b9e ""
   "fastiamb.png" 1693865253 175184 a85bb0ebd95566a63f44821944f6ee83 ""
   "flow.png" 1693723728 137970 d6ced149924be5112c185b90b7f3da3f ""
   "iamb.png" 1693865039 167330 940ddb700c9fa489dc2a5a888512f340 ""
   "iambfdr.png" 1693865942 142430 13330609f1275e54b3d8a3924f330a79 ""
   "interiamb.png" 1693865590 186101 27d3c105a1b751d539864fc2bcd6fb9f ""
   "mb.png" 1693724682 148781 a8585a4aefe9ce6bbe654cf877a26ef5 ""
-  "report.aux" 1693940297 2921 f656b0d14c791841311978c3b00db8d7 "pdflatex"
-  "report.out" 1693940297 2397 3e8e41e3aa01262318c332102db2304f "pdflatex"
-  "report.tex" 1693940289 18287 56fc18d22b3d15d19487bc3bdf99c6db ""
+  "report.aux" 1694628392 3020 ede16393329717747d18436bbef6ea3d "pdflatex"
+  "report.out" 1694628392 2397 3e8e41e3aa01262318c332102db2304f "pdflatex"
+  "report.tex" 1694628386 22108 aa06ac11e43b7058af5cb06bd296a9fc ""
   (generated)
   "report.aux"
   "report.log"

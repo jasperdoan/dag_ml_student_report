@@ -733,8 +733,6 @@ INPUT .\flow.png
 INPUT .\flow.png
 INPUT .\flow.png
 INPUT .\flow.png
-INPUT C:\Users\jaspl\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
-INPUT C:\Users\jaspl\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT C:\Users\jaspl\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\jaspl\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\jaspl\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
@@ -742,6 +740,15 @@ INPUT C:\Users\jaspl\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\jaspl\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Users\jaspl\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmrc8t.vf
 INPUT C:\Users\jaspl\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT .\dagpub.png
+INPUT .\dagpub.png
+INPUT dagpub.png
+INPUT .\dagpub.png
+INPUT .\dagpub.png
+INPUT .\dagpub.png
+INPUT .\dagpub.png
+INPUT C:\Users\jaspl\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT C:\Users\jaspl\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT C:\Users\jaspl\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
 INPUT .\mb.png
 INPUT .\mb.png
