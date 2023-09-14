@@ -64,7 +64,9 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-Develop an approach to validate expert-drawn graphs by building probabilistic graph model DAGs, through populating Machine-Learning with empirical biological data from the NASA Open Science Data Repository. Tasked with researching IAMB, Fast-IAMB, Inter-IAMB, and IAMB-FDR algorithms for medical risk assessment to let NASA HSRB formalize a shared causal flow of risk model among Risk Board stakeholders. 
+Project consists of developing an approach to validate expert-drawn graphs by building probabilistic graph model Directed Acyclic Graphs, through populating Machine-Learning with empirical biological data from the NASA Open Science Data Repository. 
+Tasked with researching IAMB, Fast-IAMB, Inter-IAMB, and IAMB-FDR algorithms for medical risk assessment to let NASA HSRB formalize a shared causal flow of risk model among Risk Board stakeholders. 
+Though the 4 assigned algorithms' results were inconsistent with what NASA scientist thought the relationship should be. 
 \end{abstract}
 
 
@@ -289,8 +291,38 @@ This study revealed that the impact of spaceflight on bone microarchitecture in 
 
 
 
-
 \section{Analysis and Discussion}
+From first glance, seems like IAMB and its variations are not good candidates for validating expert's DAG.
+Results shows that IAMB failed to capture the right relationships between variables, and is inconsistent with the expert's DAG.
+Perhaps another algorithm should be used instead, or maybe the data is not large enough to correctly infer the relationships between variables. 
+
+Nonetheless, it is to note that building causal models is hard, as causal discovery algorithms are used to infer causal
+relationships from observational and simulated data. Meaning:
+\begin{itemize}
+  \item There's no ground truth.
+  \item No domain knowledge or prior information was taken into consideration, relied solely on observed data.
+  \item Simulations only reflect common preconceptions.
+  \item Built on assumptions such as faithfulness or independence principles. 
+\end{itemize}
+
+As such, in the first place we needed a method for falsifying the output of a causal discovery algorithm in the absence of ground truth.
+Even if these algorithms produces reliable and compatiable DAG results to the expert-drawn graph.
+Passing such compatibility test makes way for a necessary criterion for good performance, and provides strong evidence for how how variables co-occur, increasing confidence of the causal models.
+
+Whatever the premise of the algorithm's design or operation is based on, it might work under certain assumptions, these assumptions might not always hold true in others. Reliability and effectiveness are subjects of uncertainty and debate.
+I suggest we find a way to quantify the level of incompatibility of the outputs of causal discovery. As it will serve as a proxy for measures like Structural Hamming distance (SHD) which require access to ground truth.
+
+Since the true causal relationships are often unknown, this distance can't be directly calculated. 
+The compatibility score could provide a more accessible and meaningful metric to assess the performance of the algorithm.
+You could achieve this by looking at the algorithm application to different subsets of variables are.
+
+For example, if you have a dataset with variables $A$, $B$, $C$, and $D$, you might run the algorithm on subsets like $\{A, B\}$, $\{A, C\}$, $\{A, D\}$, $\{B, C\}$, and so on. Trying to find causal relationships between different pairs of variables or sets of variables.
+Instead of just saying it is completely compatible or not (yes or no, 1 or 0, binary).
+
+This score could provide a more nuanced measure of compatibility by considering how much the algorithm's outputs align across different subsets.
+If the algorithm's outputs are inconsistent when applied to different subsets, it suggests a lack of compatibility. 
+This inconsistency could indicate that the algorithm's results might not be reliable in which we can discredit the algorithm.
+But then again, we wouldn't be able to guarantee that a causal discovery algorithm with a high self-compatibility score will accurately predict system behavior.
 
 
 \section{Conclusion}
