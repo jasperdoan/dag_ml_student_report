@@ -19,6 +19,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{listings}
 \usepackage{xcolor}
+
  
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -169,9 +170,9 @@ From what you know (observed data), they do influence each other's decisions. Ra
 
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{mb.png}
 
-So, who would be in Rain's Markov blanket? Firstly, it would include Cloudy because, from 21 years of living, you know if its cloudy -> High-chance it will rain! Secondly, it would include any nodes that are directly influenced by rain, like wet grass, wet floor, or cold.
+When considering Rain's Markov blanket, we should identify its core components. Firstly, it comprises the node "Cloudy" due to a consistent observation over 21 years: when it's cloudy, there's a high likelihood of rain. Secondly, it encompasses nodes directly affected by rain, such as "wet grass," "wet floor," and "cold."
 
-If you think "Rain" as a person, Rain's Markov blanket is like a small group of people who are most important to her decision-making. If you know what these people are doing, you can make a pretty good guess about what Rain is likely to do.
+Think of Rain's Markov blanket as a small group of people crucial to her decision-making. Understanding what these individuals are up to can help make reasonably accurate predictions about Rain's likely actions.
 
 In a Bayesian network, Markov blanket (MB) of a variable is the group of variables that have a direct influence on it or are directly influenced by it. It's the minimal set of variables that you need to pay attention to in order to understand and predict the behavior of that variable, without worrying about all the other variables in the network.
 
@@ -246,19 +247,59 @@ IAMB-FDR applies FDR control techniques to adjust the statistical significance t
 
 
 
+\section{Datasets}
+\paragraph{GLDS-366 | Coalescence of DNA double strand breaks induced by galactic cosmic radiation is modulated by genetics in 15 inbred strains of mice}
+The study investigates how different mouse strains respond to deep space radiation and explores the role of DNA damage markers in assessing radiation toxicity. It also explores the genetic factors influencing these responses using genome-wide association studies.
 
-\section{Data Construction}
+\quad\quad\textbf{Goal}: Investigate the variations in DNA double strand break coalescence induced by galactic cosmic radiation across autosome, mitochondrial, and sex chromosome regions in 15 inbred mouse strains, determining whether there are any genetic factors influencing radiation-induced DSBs on these different genetic elements.
+
+\begin{center}
+  \line(1,0){150}
+\end{center}
+
+\paragraph{OSD-477 and OSD-608 | Dose-dependent skeletal deficits due to varied reductions in mechanical loading in rats (Femur - microCT, three-point bending, histomorphometry) (Tibia - pQCT)}
+OSD-477 demonstrates that this rat model of partial weight bearing leads to progressive deterioration of trabecular bone density, which is proportional to the degree of partial unloading. The study mainly focuses on results obtained from mechanical testing, bone microstructure analysis using microCT, and bone histomorphometry assays using femur tissue.
+OSD-608 demonstrates that partial weight bearing in rats leads to a progressive deterioration of trabecular bone (the spongy, inner part of bone) that is proportionate to the degree of weight reduction. Importantly, this model had limited effects on cortical bone. The researchers used pQCT to gather these findings, primarily focusing on the tibia as their primary area of interest.
+
+\quad\quad\textbf{Goal}: Investigate the relationship between mechanical unloading, bone mass, trabecular architecture, and strength in rats to gain insights into bone resorption and formation processes under different loading conditions.
+
+\begin{center}
+  \line(1,0){150}
+\end{center}
+
+\paragraph{OSD-310 | Spaceflight-induced (STS-62) vertebral bone loss in ovariectomized rats is associated with increased bone marrow adiposity and no change in bone formation}
+This study sheds light on the complex relationship between bone marrow adipocytes and bone loss during spaceflight, particularly in a context of hormonal deficiency. It suggests that increased MAT may be associated with bone loss primarily through enhanced bone resorption, rather than direct inhibition of osteoblast activity.
+
+\quad\quad\textbf{Goal}: Examine the impact of microgravity exposure on bone mass, resorption, and formation in ovariectomized rats, analyzing the mechanisms driving vertebral bone loss in the context of hormonal deficiency.
+
+\begin{center}
+  \line(1,0){150}
+\end{center}
+
+\paragraph{OSD-489 | Quantifying Cancellous Bone Structural Changes in Microgravity: Axial Skeleton Results from the RR-1 Mission}
+The study aimed to confirm that bone degradation in microgravity predominantly affects specific types of bones, especially those not subjected to weight-bearing forces. It also sought to deepen our understanding of how mechanical factors influence the dynamic process of bone remodeling. The data for this study were collected from rodent lumbar 4 bones during a space mission and were analyzed using micro-computed tomography techniques.
+
+\quad\quad\textbf{Goal}: See if exposure to microgravity affects the microarchitecture and trabecular architecture, and whether mass of subject plays a vital role.
+
+\begin{center}
+  \line(1,0){150}
+\end{center}
+
+\paragraph{OSD-351 | Effects of Spaceflight on Bone Microarchitecture in the Axial and Appendicular Skeleton in Growing Ovariectomized Rats from STS-62}
+This study revealed that the impact of spaceflight on bone microarchitecture in ovariectomized rats was bone- and bone compartment-specific. Interestingly, the effects were not solely related to whether the bones were weight-bearing or non-weight-bearing. The study used micro-computed tomography (mCT) assays to obtain detailed insights into bone structure and health.
+
+\quad\quad\textbf{Goal}:  Examine the impact of spaceflight on bone mass and trabecular architecture in various bone compartments, analyzing how weight-bearing and non-weight-bearing bones respond to microgravity conditions.
 
 
-\section{Results and Outputs}
+
+
+\section{Data Construction and Results}
 
 
 \section{Analysis and Discussion}
 
 
 \section{Conclusion}
-
-
 
 % \section{Examples of citations, figures, tables, references}
 % \label{sec:others}
@@ -338,29 +379,54 @@ IAMB-FDR applies FDR control techniques to adjust the statistical significance t
 
 
 \bibitem{}
-Antonsen, Erik L., et al.
+Erik A; Avalon M; Jacqueline C; Erin C; Robert R; Ahmed A; Kristina M; Charlotte B.
 \newblock Directed Acyclic Graphs: A Tool for Understanding the NASA Human Spaceflight System Risks - Human System Risk Board.
 \newblock In {\em NTRS - NASA Technical Reports Server, 1 Oct. 2022}, ntrs.nasa.gov/citations/20220015709.
 
 \bibitem{}
-Erik L.
+Erik A.
 \newblock Human System Risk Management Plan.
 \newblock In {\em NTRS - NASA Technical Reports Server, 1 Oct. 2022}, https://ntrs.nasa.gov/citations/20205008887.
 
 \bibitem{}
-Erik L., Robert J., et al.
+Erik A; Robert R; Avalon M; Jacqueline C; Devan P; Erin C; Mark S; Mary B; Ahmed A; Kristina M; Daniel B; Wilma A; Charlotte Brown.
 \newblock Directed Acyclic Graph Guidance Documentation.
 \newblock In {\em NTRS - NASA Technical Reports Server, 1 Jun. 2022}, https://ntrs.nasa.gov/citations/20220006812.
 
 \bibitem{}
-Robert J., Ryan T., et al.
+Robert R, Ryan S, Russell T, Urszula I, Mary B, Lauren S, Erik A.
 \newblock Validating Causal Diagrams of Human Health Risks for Spaceflight: An Example Using Bone Data from Rodents.
 \newblock In {\em National Library of Medicine, 5 Sep. 2022}, https://pubmed.ncbi.nlm.nih.gov/36140288/.
 
 \bibitem{}
-Philipp M., Leena C., et al.
-\newblock Self-Compatibility: Evaluating Causal Discovery without Ground Truth.
-\newblock In {\em NTRS - NASA Technical Reports Server, 18 Jul. 2023}, https://arxiv.org/abs/2307.09552.
+Costes S; Karpen G; Cekanaviciute E; Pariset E
+\newblock Coalescence of DNA double strand breaks induced by galactic cosmic radiation is modulated by genetics in 15 inbred strains of mice
+\newblock Pub {\em NASA Open Science Data Repository}, 2021, doi: 10.26030/v8w4-rg83
+
+\bibitem{}
+Rutkove S; Bouxsein M; Ko F; Mortreux M; Riveros D; Nagy J
+\newblock Dose-dependent skeletal deficits due to varied reductions in mechanical loading in rats (Femur - microCT, three-point bending, histomorphometry)
+\newblock Pub {\em NASA Open Science Data Repository}, 2023, doi: 10.26030/b09t-mw60
+
+\bibitem{}
+Rutkove S; Bouxsein M; Ko F; Mortreux M; Riveros D; Nagy J
+\newblock Dose-dependent skeletal deficits due to varied reductions in mechanical loading in rats (Tibia - pQCT)
+\newblock Pub {\em NASA Open Science Data Repository}, 2023, doi: 10.26030/emsm-0648
+
+\bibitem{}
+Turner R; Keune J; Philbrick K; Branscum A; Iwaniec U
+\newblock Spaceflight-induced (STS-62) vertebral bone loss in ovariectomized rats is associated with increased bone marrow adiposity and no change in bone formation
+\newblock Pub {\em NASA Open Science Data Repository}, 2023, doi: 10.26030/kb2k-2150
+
+\bibitem{}
+Alwood J; Dubeé P; Scott R; Thomas N; Pendleton M
+\newblock Quantifying Cancellous Bone Structural Changes in Microgravity: Axial Skeleton Results from the RR-1 Mission
+\newblock Pub {\em NASA Open Science Data Repository}, 2023, doi: 10.26030/8wja-w380
+
+\bibitem{}
+Turner R; Keune J; Branscum A; Iwaniec U
+\newblock Effects of Spaceflight on Bone Microarchitecture in the Axial and Appendicular Skeleton in Growing Ovariectomized Rats from STS-62
+\newblock Pub {\em NASA Open Science Data Repository}, 2023, doi: 10.26030/cztm-cx29
 
 
 \end{thebibliography}
