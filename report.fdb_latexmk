@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1694649867 "c:/Users/jaspl/Downloads/Latex/report.tex" "report.pdf" "report" 1694649872 0
+["pdflatex"] 1694717254 "c:/Users/jaspl/Downloads/Latex/report.tex" "report.pdf" "report" 1694717261 0
   "C:/Users/jaspl/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1693720472 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/jaspl/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1693720478 20028 d1ffe35f46a31dc5add28eb29757ab07 ""
   "C:/Users/jaspl/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1693722588 11548 84657dfbf0ff27b03ba063d67b2af38e ""
@@ -111,8 +111,13 @@
   "C:/Users/jaspl/AppData/Local/Programs/MiKTeX/tex/latex/units/nicefrac.sty" 1469029150 4163 0462ee5ab265cf59dc15a41a3b883101 ""
   "C:/Users/jaspl/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/jaspl/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
-  "arxiv.sty" 1693721906 7756 aebc7cacc91277439daa0a5d4526ab0d ""
-  "c:/Users/jaspl/Downloads/Latex/report.tex" 1694649865 28236 41f05432cc2d2e1faee76e20ce0d37fc ""
+  "GLDS-366.png" 1694717204 186395 fdaa6cdbbcc5ac45a03097a06fc0b241 ""
+  "OSD-310.png" 1694713716 110634 f7d5ca8625bd08ddd180db39d298e4da ""
+  "OSD-351.png" 1694712544 183870 6c4e128e0d7561b247750b67484f78bd ""
+  "OSD-477_OSD-608.png" 1694713621 203266 cced0bc191abff304a16162d5a20364b ""
+  "OSD-489.png" 1694647827 82401 ce09c3d772c0f05270cbd6561079dc27 ""
+  "arxiv.sty" 1694714576 7767 8374683c6ef5794d322c423d2695710d ""
+  "c:/Users/jaspl/Downloads/Latex/report.tex" 1694717246 28566 063bf657be3472be5b8d7fd51ef11d68 ""
   "dagpub.png" 1694626971 135875 4700910626b4ac13af771075d2d74b9e ""
   "fastiamb.png" 1693865253 175184 a85bb0ebd95566a63f44821944f6ee83 ""
   "flow.png" 1693723728 137970 d6ced149924be5112c185b90b7f3da3f ""
@@ -120,9 +125,9 @@
   "iambfdr.png" 1693865942 142430 13330609f1275e54b3d8a3924f330a79 ""
   "interiamb.png" 1693865590 186101 27d3c105a1b751d539864fc2bcd6fb9f ""
   "mb.png" 1693724682 148781 a8585a4aefe9ce6bbe654cf877a26ef5 ""
-  "report.aux" 1694649871 4265 e82a0222513413227cec5fa71b9b8249 "pdflatex"
-  "report.out" 1694649871 2402 37c98e2160fc4fb65de798dcf0bafbb3 "pdflatex"
-  "report.tex" 1694649865 28236 41f05432cc2d2e1faee76e20ce0d37fc ""
+  "report.aux" 1694717260 4154 7e536bbc70229516af593d13722516f6 "pdflatex"
+  "report.out" 1694717260 2270 40d005340e260996a85ebe77b2170540 "pdflatex"
+  "report.tex" 1694717246 28566 063bf657be3472be5b8d7fd51ef11d68 ""
   (generated)
   "report.aux"
   "report.log"

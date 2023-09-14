@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.2)  13 SEP 2023 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.2)  14 SEP 2023 11:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -490,7 +490,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 {C:/Users/jaspl/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
-<flow.png, id=59, 1447.4075pt x 831.105pt>
+<flow.png, id=55, 1447.4075pt x 831.105pt>
 File: flow.png Graphic file (type png)
 <use flow.png>
 Package pdftex.def Info: flow.png  used on input line 105.
@@ -502,7 +502,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./flow.png>]
-<dagpub.png, id=67, 1059.96pt x 446.66875pt>
+<dagpub.png, id=63, 1059.96pt x 446.66875pt>
 File: dagpub.png Graphic file (type png)
 <use dagpub.png>
 Package pdftex.def Info: dagpub.png  used on input line 131.
@@ -514,7 +514,7 @@ LaTeX Info: Symbol \textrightarrow not provided by
             font family ptm in TS1 encoding.
             Default family used instead on input line 143.
  [3 <./dagpub.png>]
-<mb.png, id=76, 1376.14125pt x 1053.9375pt>
+<mb.png, id=72, 1376.14125pt x 1053.9375pt>
 File: mb.png Graphic file (type png)
 <use mb.png>
 Package pdftex.def Info: mb.png  used on input line 171.
@@ -523,13 +523,13 @@ Package pdftex.def Info: mb.png  used on input line 171.
 Underfull \vbox (badness 1546) has occurred while \output is active []
 
  [4 <./mb.png>]
-<iamb.png, id=83, 1927.2pt x 828.09375pt>
+<iamb.png, id=79, 1927.2pt x 828.09375pt>
 File: iamb.png Graphic file (type png)
 <use iamb.png>
 Package pdftex.def Info: iamb.png  used on input line 215.
 (pdftex.def)             Requested size: 469.7421pt x 201.8423pt.
  [5 <./iamb.png>]
-<fastiamb.png, id=115, 1927.2pt x 863.225pt>
+<fastiamb.png, id=111, 1927.2pt x 863.225pt>
 File: fastiamb.png Graphic file (type png)
 <use fastiamb.png>
 Package pdftex.def Info: fastiamb.png  used on input line 227.
@@ -549,12 +549,12 @@ Underfull \hbox (badness 3281) in paragraph at lines 224--228
 \OML/cmm/m/it/10 O\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 )$ \T1/ptm/m/n/10 (+20) while IAMB is $\OML/cmm/m/it/10 O\OT1/cmr/m/n/10 (2\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 )$ \T1/ptm/m/n/10 (+20) where it needs go for-ward and back-ward, here it does it in 1 loop.
  []
 
-<interiamb.png, id=116, 1927.2pt x 753.81625pt>
+<interiamb.png, id=112, 1927.2pt x 753.81625pt>
 File: interiamb.png Graphic file (type png)
 <use interiamb.png>
 Package pdftex.def Info: interiamb.png  used on input line 239.
 (pdftex.def)             Requested size: 469.7421pt x 183.73766pt.
-<iambfdr.png, id=117, 1927.2pt x 671.50874pt>
+<iambfdr.png, id=113, 1927.2pt x 671.50874pt>
 File: iambfdr.png Graphic file (type png)
 <use iambfdr.png>
 Package pdftex.def Info: iambfdr.png  used on input line 246.
@@ -587,70 +587,101 @@ Underfull \hbox (badness 2903) in paragraph at lines 243--247
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./fastiamb.png> <./interiamb.png>] [7 <./iambfdr.png>] [8
+ [6 <./fastiamb.png> <./interiamb.png>]
+<GLDS-366.png, id=120, 1927.2pt x 924.45375pt>
+File: GLDS-366.png Graphic file (type png)
+<use GLDS-366.png>
+Package pdftex.def Info: GLDS-366.png  used on input line 256.
+(pdftex.def)             Requested size: 469.7421pt x 225.3294pt.
+ [7 <./iambfdr.png> <./GLDS-366.png>]
+<OSD-477_OSD-608.png, id=130, 1926.19624pt x 915.42pt>
+File: OSD-477_OSD-608.png Graphic file (type png)
+<use OSD-477_OSD-608.png>
+Package pdftex.def Info: OSD-477_OSD-608.png  used on input line 265.
+(pdftex.def)             Requested size: 469.73256pt x 223.23923pt.
+<OSD-310.png, id=131, 1927.2pt x 848.16875pt>
+File: OSD-310.png Graphic file (type png)
+<use OSD-310.png>
+Package pdftex.def Info: OSD-310.png  used on input line 273.
+(pdftex.def)             Requested size: 469.7421pt x 206.73544pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./OSD-477_OSD-608.png> <./OSD-310.png>]
+<OSD-489.png, id=139, 1927.2pt x 861.2175pt>
+File: OSD-489.png Graphic file (type png)
+<use OSD-489.png>
+Package pdftex.def Info: OSD-489.png  used on input line 280.
+(pdftex.def)             Requested size: 469.7421pt x 209.91599pt.
+<OSD-351.png, id=140, 1927.2pt x 1008.76875pt>
+File: OSD-351.png Graphic file (type png)
+<use OSD-351.png>
+Package pdftex.def Info: OSD-351.png  used on input line 288.
+(pdftex.def)             Requested size: 469.7421pt x 245.88062pt.
+ [9 <./OSD-489.png> <./OSD-351.png>] [10
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.432 \end{thebibliography}
-                           
+l.430 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.432 \end{thebibliography}
-                           
+l.430 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.432 \end{thebibliography}
-                           
+l.430 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.432 \end{thebibliography}
-                           
+l.430 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.432 \end{thebibliography}
-                           
+l.430 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.432 \end{thebibliography}
-                           
+l.430 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.432 \end{thebibliography}
-                           
+l.430 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.432 \end{thebibliography}
-                           ] [9
+l.430 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.435 \end{document}
+l.430 \end{document}
                     ] (report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 37C98E2160FC4FB65DE798DCF0BAFBB3;2402.
+(rerunfilecheck)             Checksum: 40D005340E260996A85EBE77B2170540;2270.
  ) 
 Here is how much of TeX's memory you used:
- 14771 strings out of 476331
- 235588 string characters out of 5787766
+ 14799 strings out of 476331
+ 236130 string characters out of 5787766
  1982660 words of memory out of 5000000
- 34687 multiletter control sequences out of 15000+600000
- 562903 words of font info for 214 fonts, out of 8000000 for 9000
+ 34716 multiletter control sequences out of 15000+600000
+ 562646 words of font info for 210 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,77p,1034b,1258s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jaspl\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\jaspl\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (9 pages, 758106 bytes).
+Output written on report.pdf (10 pages, 1173091 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
+ 218 PDF objects out of 1000 (max. 8388607)
  59 named destinations out of 1000 (max. 500000)
- 48252 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 48269 words of extra memory for PDF output out of 51595 (max. 10000000)
 
