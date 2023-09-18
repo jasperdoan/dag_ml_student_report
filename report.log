@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.2)  14 SEP 2023 15:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.9.2)  17 SEP 2023 20:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -618,51 +618,51 @@ File: OSD-351.png Graphic file (type png)
 <use OSD-351.png>
 Package pdftex.def Info: OSD-351.png  used on input line 290.
 (pdftex.def)             Requested size: 469.7421pt x 245.88062pt.
- [9 <./OSD-489.png> <./OSD-351.png>] [10
+ [9 <./OSD-489.png> <./OSD-351.png>] [10] [11
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.437 
-      
+l.468 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.437 
-      
+l.468 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.437 
-      
+l.468 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.437 
-      ]
-pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.438 \bibitem{}
-                
-pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.443 \bibitem{}
-                
-pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.448 \bibitem{}
-                
-pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.453 \bibitem{}
-                 [11
+l.468 \end{document}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.462 \end{document}
+l.468 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.468 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.468 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.468 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.468 \end{document}
                     ] (report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
@@ -671,15 +671,15 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 40D005340E260996A85EBE77B2170540;2270.
  ) 
 Here is how much of TeX's memory you used:
- 14806 strings out of 476331
- 236185 string characters out of 5787766
+ 14809 strings out of 476331
+ 236209 string characters out of 5787766
  1981660 words of memory out of 5000000
  34716 multiletter control sequences out of 15000+600000
- 562906 words of font info for 214 fonts, out of 8000000 for 9000
+ 563036 words of font info for 216 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,12n,77p,1034b,1258s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jaspl\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\jaspl\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jaspl/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (11 pages, 1177516 bytes).
+Output written on report.pdf (11 pages, 1178948 bytes).
 PDF statistics:
  222 PDF objects out of 1000 (max. 8388607)
  60 named destinations out of 1000 (max. 500000)

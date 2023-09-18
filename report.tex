@@ -50,7 +50,7 @@
 
 
 
-\title{NASA DAG ML Validation Project Report}
+\title{NASA DAG ML Validation Project Research Report}
 
 
 \author{
@@ -326,7 +326,13 @@ But then again, we wouldn't be able to guarantee that a causal discovery algorit
 
 
 \section{Conclusion}
-I still have no idea what I'm doing and what this project is about
+This research project was undertaken with the objective of validating expert-drawn Directed Acyclic Graphs (DAGs) pertaining to Human Spaceflight Risks through the application of various causal discovery algorithms: IAMB, Fast-IAMB, Inter-IAMB, and IAMB-FDR. The overarching aim was to establish a coherent causal framework for risk assessment within NASA's Human System Risk Management Process.
+
+The outcomes derived from these algorithms, however, exhibited inconsistency when compared to the DAGs crafted by domain experts. This incongruence prompted a deeper inquiry into the suitability of these algorithms for DAG validation in the context of our study. Several factors contributed to this inconsistency, notably the constraints imposed by the limited size of the available dataset and the inherent intricacies associated with inferring causal relationships from observational and simulated data.
+
+In addition, I found that the IAMB algorithm and its variants may not be well-suited for the intricate nature of the dataset under examination, largely due to inherent design limitations. The IAMB algorithm, along with its variants, relies on observed data without incorporating prior domain knowledge or considering underlying assumptions and complexities that may be present in the real-world scenario of human spaceflight risks.
+
+This research underscores the inherent complexity of causal discovery, as these algorithms operate without the luxury of a definitive ground truth and depend exclusively on observed data. They are guided by fundamental principles such as faithfulness and independence, which may not always align with the multifaceted nature of real-world scenarios. Consequently, relying solely on algorithmic outputs for DAG validation presents limitations.
 
 % \section{Examples of citations, figures, tables, references}
 % \label{sec:others}
